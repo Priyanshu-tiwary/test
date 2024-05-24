@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parallax Scrolling</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      overflow-x: hidden; /* Disable horizontal scrollbar */
+    }
+
+    .parallax-container {
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .parallax-section {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      backdrop-filter: blur(10px);
+      background-size: cover;
+      height: 100vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 2em;
+    }
+
+    .parallax-section-1 {
+      background-image: url(img.jpg); /* Add your image URL here */
+    }
+
+    .parallax-section-2 {
+      background-image: url(banner.jpg); /* Add your image URL here */
+    }
+
+    /* Additional styling for content */
+    .content {
+      text-align: center;
+      padding: 20px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="parallax-container">
+    <div class="parallax-section parallax-section-1">
+      <td><a href="login.html" target="_parent"><font face="Brush Script" 
+        size="6"color="navy">Login for Admin</a></td>
+    </div>
+  </div>
+
+  <div class="parallax-container">
+    <div class="parallax-section parallax-section-2">
+      <td><a href="login.html" target="rightframe"><font face="Brush 
+        Script"size="6"color="navy"> login for User</a></td>
+    </div>
+  </div>
+
+  <!-- Add more parallax sections as needed -->
+
+</body>
+</html>
